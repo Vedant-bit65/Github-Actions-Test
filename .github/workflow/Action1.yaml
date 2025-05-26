@@ -13,4 +13,4 @@ jobs:
 
   - name: 'Run_PowerShell_tree_script'
     shell: pwsh
-    run: ./tree.ps1
+    run: ./Tree.ps1
