@@ -1,0 +1,16 @@
+name: First Action
+
+on:
+  workflow_dispatch: 
+  
+jobs:
+ drawtree:
+  runs-on: windows-latest
+ 
+  steps:
+  - name: 'Checkout code'
+    uses: actions/checkout@v4
+
+  - name: 'Run_PowerShell_tree_script'
+    shell: pwsh
+    run: ./Tree.ps1
